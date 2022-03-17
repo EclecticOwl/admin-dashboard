@@ -1,0 +1,74 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+li 
+    list-style-type: none
+.thumbnail
+    height: 3em
+    width: 3em
+    border-radius: 50%
+// Layout
+.container 
+    display: grid
+    grid-template-columns: 1fr 5fr
+.sidenav 
+    display: flex
+    flex-direction: column
+    gap: 2em
+.main
+    display: flex
+    flex-direction: column
+    gap: 2em
+
+    .main-header
+        display: grid
+        grid-template-rows: 1fr 1fr
+
+        .main-header-top
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+            .search 
+                display: flex
+                justify-content: center
+                align-items: center
+
+                input
+                    width: 60%
+                    height: 2em
+                    border-radius: 1em
+            
+            .profile-info 
+                display: flex
+                justify-content: end
+                align-items: center
+
+        
+        .main-header-bottom
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+            .header-greeting 
+                display: flex
+                flex-direction: row
+            
+            .header-side-links 
+                
+                ul
+                    display: flex
+                    justify-content: center
+                    gap: 3em
+
+
+.main-content
+    margin-top: 3em
+    display: grid
+    grid-template-columns: 4fr 1fr
+
+    .projects
+        grid-row: span 2
+
+
